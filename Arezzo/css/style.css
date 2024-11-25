@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/*Faz uma borda transparente para o header do html
+ usando o display flex row para organizar o cabeçalho em linha*/
+header {
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: row;
+    border-width: 0.5px;
+    transition: border 0.3s ease;
+
+
+}
+/*Usar o hover para decorar ao passar o cursor do mouser sobre a borda que está no header*/
+header:hover {
+
+    border: 1px solid black;
+
+}
+/*Deixa a borda usada dentro da outra no cabeçalho transparente */
+header ul {
+    border: 2px ;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 500px;
+    line-height: 2.25rem
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    color: rgb(0, 0, 0)
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        display: none;
+    }
+
+    section {
+        flex-direction: column;
+    }
+}
