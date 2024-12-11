@@ -3,60 +3,250 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-}
-/*Faz uma borda transparente para o header do html
- usando o display flex row para organizar o cabeçalho em linha*/
-header {
-    border: 2px solid transparent;
-    display: flex;
-    flex-direction: row;
-    border-width: 0.5px;
-    transition: border 0.3s ease;
-
-
-}
-/*Usar o hover para decorar ao passar o cursor do mouser sobre a borda que está no header*/
-header:hover {
-
-    border: 1px solid black;
-
-}
-/*Deixa a borda usada dentro da outra no cabeçalho transparente */
-header ul {
-    border: 2px ;
-    width: 600px;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header ul li a {
-    text-decoration: none;
+.centralize {
+    max-width: 1175px;
+    margin-inline: auto;
+}
+
+hr {
+    margin-block: 40px;
+    height: 1px;
+}
+
+.navbar {
+    background-color: white;
+    height: 96px;
+}
+
+.nav-banner {
+    width: 104px;
+}
+
+.navbar .nav-item {
     color: black;
-    padding-bottom: 5px;
-    font-size: 1rem;
-    font-weight: 500px;
-    line-height: 2.25rem
+    border-bottom: 0px;
+    text-decoration: none;
 }
 
-header ul li a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    color: rgb(0, 0, 0)
+.navbar .nav-item:hover {
+    border-bottom: solid 1px black;
 }
 
-section {
+.flex {
     display: flex;
-    flex-direction: row;
 }
 
-@media screen and (max-width: 800px) {
-    header {
-        display: none;
-    }
+.gap-2 {
+    gap: 20px;
+}
 
-    section {
-        flex-direction: column;
-    }
+.gap-4 {
+    gap: 40px;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-content {
+    align-content: center;
+}
+
+.margin-x-2 {
+    margin-inline: 20px;
+}
+
+.margin-x-4 {
+    margin-inline: 40px;
+}
+
+.padding-y-20 {
+    padding-block: 20px;
+}
+
+.divider {
+    width: 2px;
+    height: 24px;
+    background-color: black;
+}
+
+.filter-invert {
+    filter: invert(100%);
+}
+
+.width-88 {
+    width: 88px;
+}
+
+.text-underline {
+    text-decoration: underline !important;
+}
+
+.text-red {
+    color: red !important;
+}
+
+.justif-end {
+    justify-content: end;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.breadcrumb li:not(:last-child) {
+    color: #cec6be;
+}
+
+.breadcrumb li:not(:first-child)::before {
+    margin: 10px;
+    content: "|";
+}
+
+.content-info {
+    padding-block: 30px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+}
+
+.grid-6 {
+    grid-template-columns: repeat(6, minmax(0px, 1fr));
+}
+
+.grid {
+    display: grid;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-decoration-none,
+.text-decoration-none a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-size-12,
+.font-size-12 h3,
+.font-size-12 h2 {
+    font-size: 12px;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.text-white,
+.text-white a {
+    color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-black hr {
+    background-color: white;
+}
+
+.button {
+    padding: 12px 24px;
+    margin: 15px 0px;
+    background-color: black;
+    border-radius: 40px;
+    border-color: black;
+    border: solid 2px;
+    color: white;
+    transition: all 0.1s ease-in-out;
+    min-height: 48px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.bg-black .button.button-outline {
+    background-color: black;
+}
+
+.bg-black .button.button-outline:hover {
+    background-color: white;
+    color: black;
+}
+
+.bg-beige {
+    background-color: #F6F5F3;
+}
+
+.bg-dark-beige {
+    background-color: #f0eeec;
+}
+
+.input {
+    padding: 12px 24px;
+    margin: 15px 0px;
+    background-color: transparent;
+    border-radius: 40px;
+    border-color: black;
+    border: solid 2px;
+    color: black;
+    transition: all 0.1s ease-in-out;
+    min-height: 48px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-50 {
+    margin: 50px;
+}
+
+.margin-y-50 {
+    margin-block: 50px;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.img-description {
+    position: absolute;
+    transform: translate(0%, -200%);
+    text-align: center;
 }

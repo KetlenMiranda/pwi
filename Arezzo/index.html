@@ -12,21 +12,243 @@
 
 <body>
     <header>
-        <figure><a href="#"><img src="imagens/logo.png" /></a></figure>
-        <ul>
-            <li><a href="#">NOVIDADES</a></li>
-            <li><a href="#">SAPATOS</a></li>
-            <li><a href="#">BOLSAS</a></li>
-            <li><a href="#">VERÃO</a></li>
-            <li><a href="#">BAG SURPRESA</a></li>
-        </ul>
+        <nav class="navbar flex margin-x-2 gap-4">
+            <a href="#" class="align-content"><img src="imagens/logo.png" class="nav-banner" /></a>
+
+            <ul class="flex gap-4 list-style-none align-center flex-grow-1">
+                <li><a class="nav-item align-center padding-y-20" href="#">NOVIDADES</a></li>
+                <li><a class="nav-item align-center padding-y-20" href="#">SAPATOS</a></li>
+                <li><a class="nav-item align-center padding-y-20" href="#">BOLSAS</a></li>
+                <li><a class="nav-item align-center padding-y-20" href="#">VERÃO</a></li>
+                <li><a class="nav-item align-center padding-y-20" href="#">BAG SURPRESA</a></li>
+                <li><a class="nav-item align-center padding-y-20 text-red" href="#">BLACK FRIDAY</a></li>
+                <li class="divider"></li>
+                <a href="#" class="align-content"><img class="filter-invert width-88"
+                        src="imagens/Brand-Brizza.webp" /></a>
+            </ul>
+
+            <ul class="flex gap-4 list-style-none align-center">
+                <li><a class="nav-item align-center padding-y-20" href="#">BUSCAR</a></li>
+                <li class="divider"></li>
+                <li><a class="nav-item align-center padding-y-20 text-underline" href="#">ATIVE SUA LOCALIZAÇÃO</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <img src="imagens/inicio.webp" width="350"/>
-        <img src="imagens/inicio.webp" width="350"/>
-        <img src="imagens/inicio.webp" width="350"/>
-    </div>
-    
+
+    <main>
+        <ul class="breadcrumb">
+            <li>HOME</li>
+            <li>SAPATOS</li>
+        </ul>
+
+        <section>
+            <ul class="flex list-style-none gap-4 justify-content-center">
+                <li><img src="imagens/tipos-sapatos/sapato-1.webp" alt=""><div class="img-description"><p>SANDÁLIAS</p></div></li>
+                <li><img src="imagens/tipos-sapatos/sapato-2.webp" alt=""><div class="img-description"><p>TAMANCOS</p></div></li>
+                <li><img src="imagens/tipos-sapatos/sapato-3.webp" alt=""><div class="img-description"><p>SAPATILHAS</p></div></li>
+                <li><img src="imagens/tipos-sapatos/sapato-4.webp" alt=""><div class="img-description"><p>RASTEIRAS</p></div></li>
+                <li><img src="imagens/tipos-sapatos/sapato-5.webp" alt=""><div class="img-description"><p>MULES</p></div></li>
+            </ul>
+        </section>
+
+        <article>
+            <div class="content-info">
+                <h1>SAPATOS</h1>
+            </div>
+
+            <ul class="grid list-style-none gap-4 flex-wrap grid-4">
+                <li>
+                    <a href="" class="text-decoration-none">
+                        <img class="w-100" src="imagens/sapatos/sapato-1.webp" alt="">
+                        <div class="text-black font-size-12 flex justify-content-between">
+                            <p>Sandália Rasteira Branca Couro Slim Flor Marianne</p>
+                            <h2><strong>R$ 100,00</strong></h2>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="text-decoration-none">
+                        <img class="w-100" src="imagens/sapatos/sapato-2.webp" alt="">
+                        <div class="text-black font-size-12 flex justify-content-between">
+                            <p>Sandália Rasteira Branca Couro Slim Flor Marianne</p>
+                            <h2><strong>R$ 100,00</strong></h2>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="text-decoration-none">
+                        <img class="w-100" src="imagens/sapatos/sapato-3.webp" alt="">
+                        <div class="text-black font-size-12 flex justify-content-between">
+                            <p>Sandália Rasteira Branca Couro Slim Flor Marianne</p>
+                            <h2><strong>R$ 100,00</strong></h2>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="text-decoration-none">
+                        <img class="w-100" src="imagens/sapatos/sapato-4.webp" alt="">
+                        <div class="text-black font-size-12 flex justify-content-between">
+                            <p>Sandália Rasteira Branca Couro Slim Flor Marianne</p>
+                            <h2><strong>R$ 100,00</strong></h2>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="text-decoration-none">
+                        <img class="w-100" src="imagens/sapatos/sapato-5.webp" alt="">
+                        <div class="text-black font-size-12 flex justify-content-between">
+                            <p>Sandália Rasteira Branca Couro Slim Flor Marianne</p>
+                            <h2><strong>R$ 100,00</strong></h2>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+        <div class="text-center">
+            <button class="button" href="">Veja mais produtos</button>
+        </div>
+
+        <article class="bg-beige flex padding-y-20">
+            <img src="imagens/sapatos/sapatos.webp" alt="">
+            <section class="margin-50">
+                <h2 class="margin-bottom-20">SAPATOS</h2>
+                <p class="margin-bottom-20">Os sapatos femininos são itens essenciais no guarda-roupa de toda mulher. Na
+                    Arezzo, você
+                    encontra a
+                    melhor seleção de sapatos femininos nas últimas tendências da temporada e com a qualidade e tradição
+                    que
+                    você já conhece. Para todas as ocasiões e necessidades, tem um calçado Arezzo que é ideal para você!
+                </p>
+                <p class="margin-bottom-20"><strong>Sapatos femininos para o dia a dia e ocasiões especiais</strong></p>
+                <p class="margin-bottom-20">São diversas opções para todas as suas necessidades! Para o office, há uma
+                    variedade de sapatos
+                    femininos
+                    sociais, mais sóbrios e práticos, como o sapato scarpin, um clássico das produções de escritório.
+                    Para o
+                    dia a dia, as opções são infinitas! Desde um sapato de salto baixo, para quem busca conforto, a um
+                    sapato mocassim feminino. Tudo vai depender do seu estilo e prioridade.</p>
+                <p class="margin-bottom-20">Para dias especiais, a Arezzo também conta com uma seleção de sapatos
+                    femininos perfeitos para festas
+                    e
+                    eventos e para noivas. São sandálias, scarpins e sapatilhas em materiais e acabamentos sofisticados,
+                    ideais para ocasiões que pedem um toque extra de requinte.</p>
+                <p class="margin-bottom-20"><strong>Sapato feminino confortável e versátil é aqui</strong></p>
+                <p class="margin-bottom-20">Conforto é fundamental e a Arezzo sabe disso. Por isso, oferece para você
+                    sapatos femininos que unem
+                    estilo e conforto sempre. Escolha o que mais tem a ver com você, seja um sapato de salto grosso, um
+                    tênis, uma rasteira ou uma papete.</p>
+                <a href="">Ver mais</a>
+            </section>
+        </article>
+
+        <section class="bg-dark-beige padding-y-20">
+            <div class="centralize flex justify-content-between">
+                <article>
+                    <h2 class="margin-bottom-20">Fique por dentro das novidades</h2>
+                    <p>Receba com exclusividade a nossa newsletter com tendências, promoções e muito mais.</p>
+                </article>
+                <form>
+                    <input class="input" type="email" name="txtEmail" id="" placeholder="Infome seu e-mail" required>
+                    <button class="button" type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white bg-black">
+        <div class="centralize">
+            <section class="flex justify-content-between align-center margin-x-2 padding-y-20">
+                <div class="flex gap-2">
+                    <h3>Siga a Arezzo</h3>
+                    <a href="">Instagram</a>
+                    <a href="">Facebook</a>
+                </div>
+                <div class="flex gap-2">
+                    <h3>Certificado</h3>
+                    <a href="">Instagram</a>
+                    <a href="">Facebook</a>
+                </div>
+                <button class="button button-outline">Compre pelo Whatsapp</button>
+            </section>
+
+            <hr>
+
+            <section class="grid grid-6 margin-x-2">
+                <article>
+                    <ul class="list-style-none flex gap-2 flex-column text-decoration-none">
+                        <li>
+                            <h3>Institucional</h3>
+                        </li>
+                        <li><a href="">Institucional</a></li>
+                        <li><a href="">Sobre A Marca</a></li>
+                        <li><a href="">RI Arezzo&Co</a></li>
+                        <li><a href="">Relatório Anual</a></li>
+                        <li><a href="">Trabalhe Conosco</a></li>
+                        <li><a href="">Venda Corporativa</a></li>
+                        <li><a href="">Sustentabilidade</a></li>
+                        <li><a href="">Mapa do Site</a></li>
+                        <li><a href="">Benefícios</a></li>
+                        <li><a href="">Black Friday</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <ul class="list-style-none flex gap-2 flex-column text-decoration-none">
+                        <li>
+                            <h3>Franquias</h3>
+                        </li>
+                        <li><a href="">Multimarcas</a></li>
+                        <li><a href="">CRM&Bônus</a></li>
+                        <li><a href="">Plano de Negócio</a></li>
+                        <li><a href="">Seja Franqueado</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <ul class="list-style-none flex gap-2 flex-column text-decoration-none">
+                        <li>
+                            <h3>Ajuda e suporte</h3>
+                        </li>
+                        <li><a href="">Central de Atendimento</a></li>
+                        <li><a href="">Cadastro</a></li>
+                        <li><a href="">Entrega</a></li>
+                        <li><a href="">Meus Pedidos</a></li>
+                        <li><a href="">Trocas e Devoluções</a></li>
+                        <li><a href="">Cartão Presente</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <ul class="list-style-none flex gap-2 flex-column text-decoration-none">
+                        <li>
+                            <h3>Privacidade</h3>
+                        </li>
+                        <li><a href="">Termos de Uso</a></li>
+                        <li><a href="">Politica e Privacidade</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <ul class="list-style-none flex gap-2 flex-column text-decoration-none">
+                        <li>
+                            <h3>Localizador de Lojas</h3>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <ul class="list-style-none flex gap-2 flex-column text-decoration-none">
+                        <li>
+                            <h3>Mundo Arezzo</h3>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <div class="text-center font-size-12 padding-y-20">© 2024, Arezzo. Todos os direitos reservados. ZZAB
+                Comércio
+                de Calçados Ltda. | Rua
+                África do Sul, 2280.
+                Padre Mathias, Cariacica/ES. CEP: 29157-900 | CNPJ: 07.900.208/0077-04</div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
